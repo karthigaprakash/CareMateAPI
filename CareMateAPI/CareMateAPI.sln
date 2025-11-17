@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareMateAPI", "CareMateAPI.csproj", "{F7B66D77-662A-42A8-B7CD-DA8ED75B87E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7B66D77-662A-42A8-B7CD-DA8ED75B87E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B66D77-662A-42A8-B7CD-DA8ED75B87E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B66D77-662A-42A8-B7CD-DA8ED75B87E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B66D77-662A-42A8-B7CD-DA8ED75B87E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B2482AE-5438-462A-A211-FB59514F7019}
+	EndGlobalSection
+EndGlobal
