@@ -12,6 +12,8 @@ public class User
 
     public string? MobileNumber { get; set; }
 
+    public bool IsDelete { get; set; } = false;
+
     public DateTime CreatedDate { get; set; }
 
     public DateTime? ModifiedDate { get; set; }
