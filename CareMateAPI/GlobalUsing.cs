@@ -1,2 +1,11 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using CareMateAPI.Model.Master;
+global using CareMateAPI.DatabaseContext;
+global using Microsoft.AspNetCore.Mvc;
+global using CareMateAPI.Model.Common;
+global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using CareMateAPI.Repository;

@@ -4,18 +4,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CareMateAPI.Repository;
 
-public class AuthRepository
+public class AuthService
 {
     private readonly CareMateDbContext _context;
+    private readonly JwtTokenService _jwtTokenService;
 
-    public AuthRepository(CareMateDbContext context)
+    public AuthService(CareMateDbContext context, JwtTokenService jwtTokenService)
     {
         _context = context;
+        _jwtTokenService = jwtTokenService;
     }
 
-    public async Task<User?> ValidateUserAsync(string email, string password)
+    public string Login(int id, string password)
     {
-        return await _context.User
-            .FirstOrDefaultAsync(u => u.Email == email && u.Password == password && !u.IsDelete);
+        var user = _context.User.FirstOrDefault(u => u.Id == id && u.Password == password);
+
+        if (user == null) return null;
+
+        return _jwtTokenService.GenerateToken(user);
     }
 }
