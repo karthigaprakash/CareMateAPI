@@ -17,4 +17,6 @@ public class User
     public DateTime CreatedDate { get; set; }
 
     public DateTime? ModifiedDate { get; set; }
+
+    public virtual ICollection<UserRole>? UserRoles { get; set; }
 }
