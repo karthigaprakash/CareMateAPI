@@ -9,3 +9,7 @@ global using System.IdentityModel.Tokens.Jwt;
 global using System.Security.Claims;
 global using System.Text;
 global using CareMateAPI.Repository;
+global using CareMateAPI.Helper;
+global using Microsoft.AspNetCore.Authorization;
+global using System.Net;
+global using System.Text.Json.Serialization;
